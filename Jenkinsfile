@@ -1,5 +1,8 @@
 pipeline{
-	agent { dockerfile true }
+	agent { 
+		label 'master'
+		dockerfile true 
+	}
 	stages {
 		stage ('index'){
 		     steps {
